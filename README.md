@@ -25,7 +25,7 @@ Named arguments allow passing arguments to a function by specifying the paramete
         
         greet(greeting: "Hi", name: "John");  // Output: Hi, John!
 
-## Constructor Property Promotion:
+## 3 Constructor Property Promotion:
 
 Constructor property promotion reduces boilerplate code when creating classes by allowing properties to be declared and initialized directly in the constructor.
 
@@ -75,7 +75,7 @@ The nullsafe operator (?->) allows accessing properties or calling methods on po
         $user = new User();
         echo $user?->address?->getCity();  // Output: New York
 
-## Weak Maps:
+## 6 Weak Maps:
 
 Weak maps allow associating arbitrary data with objects without preventing those objects from being garbage collected when they are no longer needed.
 
@@ -92,7 +92,7 @@ Weak maps allow associating arbitrary data with objects without preventing those
     var_dump($weakMap[$obj]);  // Output: NULL
 
 
-## Saner Numeric Strings:
+## 7 Saner Numeric Strings:
 
 PHP 8 introduces a more consistent behavior for numeric strings, making operations involving numeric strings more predictable.
     // Example of Saner Numeric Strings
@@ -100,7 +100,7 @@ PHP 8 introduces a more consistent behavior for numeric strings, making operatio
     var_dump("123" . "456");  // Output: string(6) "123456"
 
 
-## Throw Expression:
+## 8 Throw Expression:
 
 PHP 8 allows throwing exceptions in expressions, enabling cleaner and more concise error handling code.
         // Example using Throw Expression
@@ -109,7 +109,7 @@ PHP 8 allows throwing exceptions in expressions, enabling cleaner and more conci
         $result = $value >= 0 ? $value : throw new InvalidArgumentException('Negative value not allowed');
 
 
-## Just-In-Time (JIT) Compilation:
+## 9 Just-In-Time (JIT) Compilation:
 
 While not a language feature per se, PHP 8 introduced JIT compilation, which can significantly improve the performance of PHP applications by dynamically compiling code into machine code.
 

@@ -13,3 +13,14 @@ Union types allow declaring that a parameter or return type can accept multiple 
     
     foo(123);      // Output: 123
     foo("Hello");  // Output: Hello
+
+## 2 Named Arguments:
+
+Named arguments allow passing arguments to a function by specifying the parameter name, which makes function calls more readable and less error-prone, especially for functions with many parameters.
+        
+        // Example using Named Arguments
+        function greet($name, $greeting = "Hello", $punctuation = "!") {
+            echo "$greeting, $name$punctuation";
+        }
+        
+        greet(greeting: "Hi", name: "John");  // Output: Hi, John!

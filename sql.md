@@ -1,31 +1,20 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # primary key vs unique key in mysql
 
 Primary keys and unique keys in MySQL both enforce data integrity by ensuring uniqueness within a table, but they have some key differences:
 
 ## Uniqueness:
 
-Primary Key: Guarantees strict uniqueness for all rows. No two rows can have the same value in the primary key column(s). It enforces entity integrity, meaning each row has a unique identity within the table.
-Unique Key: Enforces uniqueness for most rows, but allows one or more rows to have a NULL value. Only one NULL value is allowed per unique key. It primarily prevents duplicate entries.
+### Primary Key:
+Guarantees strict uniqueness for all rows. No two rows can have the same value in the primary key column(s). It enforces entity integrity, meaning each row has a unique identity within the table.
+### Unique Key:
+ Enforces uniqueness for most rows, but allows one or more rows to have a NULL value. Only one NULL value is allowed per unique key. It primarily prevents duplicate entries.
 ## Number of Constraints:
 
-Primary Key: A table can only have one primary key constraint.
-Unique Key: A table can have multiple unique key constraints on different columns or sets of columns.
+### Primary Key:
+A table can only have one primary key constraint.
+### Unique Key:
+A table can have multiple unique key constraints on different columns or sets of columns.
 ## Other Differences:
 
 ## NULL Values:

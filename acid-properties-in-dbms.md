@@ -1,1 +1,1 @@
-![Uploading image.png…]()
+![ACID-Properties.jpeg]()

@@ -13,8 +13,8 @@ Creating worker pools to distribute tasks across multiple cores. (manage the wor
 ### Communication:
 Requires inter-process communication (IPC) mechanisms like streams, pipes, or message passing to exchange data between the main process and child processes.
 ### Benefits:
-Strong isolation: Ideal for tasks that might crash or have resource conflicts.
-Flexibility: Can be used to run any executable, not just Node.js code.
+-- **Strong isolation:** Ideal for tasks that might crash or have resource conflicts.
+-- **Flexibility:** Can be used to run any executable, not just Node.js code.
 ### Cluster Module:
 
 ### Concept: 

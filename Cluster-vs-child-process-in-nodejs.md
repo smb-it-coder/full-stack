@@ -20,8 +20,7 @@ Flexibility: Can be used to run any executable, not just Node.js code.
 ### Concept: 
 Creates worker processes that are copies of the main process, sharing the same server port. They all run within the same event loop but have separate V8 runtimes and memory spaces.
 ### Use Cases:
-### Primary Purpose:
-Leverage multiple cores on a server to handle incoming requests concurrently, improving performance for web applications.
+**Primary Purpose:** Leverage multiple cores on a server to handle incoming requests concurrently, improving performance for web applications.
 Can also be used for non-web applications where you want to distribute workload across cores.
 ### Communication:
 Workers can communicate with the parent process and each other using worker threads' message passing functionality.
@@ -30,7 +29,7 @@ The cluster module simplifies this communication compared to manual IPC setup.
 Easier workload distribution for web servers.
 Automatic worker management (spawning, restarting on crashes).
 Shared server port for efficient handling of incoming connections.
-### Choosing Between Them:
+## Choosing Between Them:
 
 ### Use child_process when:
 You need to run external commands or non-Node.js executables.
@@ -42,6 +41,6 @@ You need to distribute workload across cores for a Node.js application.
 You want a simpler approach to worker management and communication.
 ### Here's an analogy:
 
-Child processes are like independent contractors you hire to work on separate tasks.
-Cluster is like having a team of employees working under you, all sharing the same office (server port) but with their own desks (memory spaces).
+**Child processes** are like independent contractors you hire to work on separate tasks.
+**Cluster** is like having a team of employees working under you, all sharing the same office (server port) but with their own desks (memory spaces).
 I hope this explanation clarifies the distinction between cluster and child_process in Node.js!

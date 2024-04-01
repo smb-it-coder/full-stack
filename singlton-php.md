@@ -38,10 +38,10 @@ e.g.
 - bool(true)
 - Object1 and Object2 will point to the same instance
 
-            _______________________
-           |                       |
-$obj1 ---->|  Instance of DBConn   |<----- $obj2
-           |_______________________| 
+                     _______________________
+                    |                       |
+         $obj1 ---->|  Instance of DBConn   |<----- $obj2
+                    |_______________________| 
 
 
 ## IInd example

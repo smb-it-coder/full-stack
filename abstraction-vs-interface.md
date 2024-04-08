@@ -9,6 +9,9 @@
 - **Inheritance**: A class can inherit from only one abstract class, but it can implement multiple interfaces. This is because an abstract class represents a type of object, while an interface represents a set of behaviors.
 - **Access modifiers**: Abstract classes can have access modifiers such as public, protected, and private for their methods and properties, while interfaces can only have public access.
 - **Variables**: An abstract class can have member variables, while an interface cannot.
+- **Extensibility:**
+   - **Abstract classes** allow for future extension by adding new methods with default implementations. However, adding new methods to an abstract class can potentially break existing subclasses.
+   - **Interfaces** ensure a more robust contract as they can be implemented by any class without affecting existing class hierarchies. Adding new methods to an interface does not break existing implementations.
 
 **In summary, abstract classes are used to provide a base class for concrete subclasses to inherit from, while interfaces are used to define a set of methods that a class must implement. Abstract classes can have implemented and abstract methods, while interfaces can only have abstract methods.** Classes can inherit from only one abstract class, but can implement multiple interfaces.
 

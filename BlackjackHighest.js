@@ -11,7 +11,7 @@
  * tie between a ten and a face card in your hand, return the face card as the "highest card". If you have multiple
  * face cards, the order of importance is jack, queen, then king.
  *
- * @author Nick Livens
+ * @author Brij Singh
  */
 
 

@@ -31,3 +31,23 @@ function numberSearch(str) {
 //Control
 console.log(numberSearch("H3ello9-9"));
 console.log(numberSearch("One Number*1*"));
+
+
+
+
+function number_search(str) { 
+    const num = str.match(/[0-9]/g).reduce((item, next) => +item + +next);
+
+   console.log(num)
+    
+  return Math.round(
+      str.match(/[0-9]/g).
+      reduce((item, next) => +item + +next) / str.match(/[a-zA-z]/g).length); 
+         
+}
+
+
+
+//Control
+console.log(number_search("H3ello9-9"));
+console.log(number_search("One Number*1*"));

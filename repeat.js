@@ -1,6 +1,7 @@
 //uncompress('3(ab)') // 'ababab'
 //uncompress('3(ab2(c))') // 'abccabccabcc'
 
+function uncompress() {
 var rNum = 0;
 var rStr = '';
 var out = '';
@@ -25,4 +26,11 @@ for(let char of str)  {
   
 }
 
-out += rStr.repeat(rNum);
+ out += rStr.repeat(rNum);
+
+return out;
+}
+
+uncompress('3(ab2(c))') // 'abccabccabcc'
+
+

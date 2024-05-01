@@ -1,5 +1,5 @@
 /**
- * Using the Java language, have the function BlackjackHighest(strArr) take the strArr parameter being passed which will
+ * Using the Java Script language, have the function BlackjackHighest(strArr) take the strArr parameter being passed which will
  * be an array of numbers and letters representing blackjack cards. Numbers in the array will be written out.
  * So for example strArr may be ["two","three","ace","king"]. The full list of possibilities for strArr is: two, three,
  * four, five, six, seven, eight, nine, ten, jack, queen, king, ace. Your program should output below, above,

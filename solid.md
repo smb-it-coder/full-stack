@@ -2,27 +2,27 @@ SOLID is an acronym for five key principles of object-oriented design that promo
 
 Here's a breakdown of each principle:
 
-1. Single Responsibility Principle (SRP):
+## 1. Single Responsibility Principle (SRP):
 
-A class should have one, and only one, reason to change.
-This means each class should focus on a single functionality or responsibility.
-Benefits: Improves code maintainability, reduces complexity, and makes testing easier.
-2. Open-Closed Principle (OCP):
+- A class should have one, and only one, reason to change.
+- This means each class should focus on a single functionality or responsibility.
+- Benefits: Improves code maintainability, reduces complexity, and makes testing easier.
+## 2. Open-Closed Principle (OCP):
 
 Software entities (classes, modules) should be open for extension but closed for modification.
 This encourages achieving new functionalities through extension (inheritance, composition) rather than directly modifying existing code.
 Benefits: Promotes code reusability, reduces the risk of introducing bugs in existing code, and facilitates future enhancements.
-3. Liskov Substitution Principle (LSP):
+## 3. Liskov Substitution Principle (LSP):
 
 Objects of a superclass should be replaceable with objects of its subtypes without altering the program's correctness.
 Subtypes should be functionally equivalent to their base types and adhere to the base type's contract (methods and behavior).
 Benefits: Ensures type safety, improves code reliability, and allows for easier code changes and extensions.
-4. Interface Segregation Principle (ISP):
+## 4. Interface Segregation Principle (ISP):
 
 Clients should not be forced to depend on methods they do not use.
 Large interfaces with many unrelated methods should be broken down into smaller, more specific interfaces.
 Benefits: Enhances code flexibility, reduces coupling between classes, and promotes loose coupling (dependencies on abstractions rather than concrete implementations).
-5. Dependency Inversion Principle (DIP):
+## 5. Dependency Inversion Principle (DIP):
 
 High-level modules should not depend on low-level modules. Both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions.
 This principle promotes relying on interfaces or abstractions rather than concrete implementations.

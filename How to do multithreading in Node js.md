@@ -1,6 +1,6 @@
 Node.js itself is single-threaded, meaning it can only execute one task at a time. However, you can achieve a pseudo-multithreading effect using techniques that enable your application to handle multiple operations concurrently. Here are the common approaches for achieving concurrency in Node.js:
 
-1. Worker Threads (Available since Node.js v10.5.0):
+## 1. Worker Threads (Available since Node.js v10.5.0):
 
 The worker_threads module allows you to spawn separate worker threads that can execute CPU-bound tasks in parallel with the main thread.
 This is beneficial for computationally intensive operations that would otherwise block the main thread and hinder responsiveness.
@@ -18,7 +18,7 @@ worker.on('message', (message) => {
 });
 Use code with caution.
 content_copy
-2. Asynchronous Programming with Promises or Async/Await:
+## 2. Asynchronous Programming with Promises or Async/Await:
 
 Node.js shines in handling asynchronous operations efficiently.
 Promises and async/await provide mechanisms to handle non-blocking I/O operations (like network requests, database interactions) without blocking the main thread.
@@ -38,7 +38,7 @@ fetchData('https://api.example.com/data')
 // Meanwhile, the main thread can continue processing other tasks
 Use code with caution.
 content_copy
-3. Event Loop and Callbacks:
+## 3. Event Loop and Callbacks:
 
 Node.js utilizes an event loop that processes events and callbacks in a non-blocking manner.
 When an asynchronous operation is initiated (e.g., network request), a callback function is registered with the event loop.

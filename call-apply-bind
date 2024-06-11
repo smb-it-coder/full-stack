@@ -1,0 +1,39 @@
+# What is the difference between call, apply and bind?
+All three (call, apply, and bind) are methods in JavaScript used to control how a function is executed. They primarily differ in how they handle the function's context (the value of this inside the function) and arguments.
+
+Here's a breakdown of each:
+
+call()
+Execution: Immediate
+Context (this): Set to the first argument provided
+Arguments: Individual arguments listed after the context object
+apply()
+Execution: Immediate
+Context (this): Set to the first argument provided
+Arguments: Expects arguments as an array (or array-like object) passed after the context object
+bind()
+Execution: Doesn't execute immediately, returns a new function
+Context (this): Set to the first argument provided
+Arguments: Can optionally set preset arguments during creation, additional arguments can be passed when the new function is called
+In simpler terms:
+
+Use call or apply when you want to immediately run a function with a specific context (what this refers to inside the function).
+Use call if your arguments are a simple list.
+Use apply if your arguments are already in an array.
+Use bind when you want to create a new function with a pre-defined context (what this refers to) that you can call later.
+Here's an example to illustrate the difference:
+
+function greet(message) {
+  console.log(this.name + " says: " + message);
+}
+
+const person = { name: "Alice" };
+
+greet.call(person, "Hello!");  // Output: Alice says: Hello!
+greet.apply(person, ["Hi there!"]);  // Output: Alice says: Hi there!
+
+const boundGreet = greet.bind(person, "Good morning");
+boundGreet();  // Output: Alice says: Good morning
+
+I hope this clarifies the differences between call, apply, and bind!
+
